@@ -1,1 +1,24 @@
-// TODO
+.header {
+  height: 105px;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  a {
+    padding: 40px;
+
+    img {
+      padding-left: 200px;
+    }
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    cursor: pointer;
+  }
+}

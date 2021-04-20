@@ -1,0 +1,44 @@
+{
+  "first_publication_date": "2021-04-16T13:41:17+0000",
+  "data": {
+    "title": "Mapas com React usando Leaflet",
+    "banner": {
+      "url": "https://images.prismic.io/primeiro-desafio/c3fe648e-c1cb-4d30-8f8b-43ce7a843061_Captura+de+tela+de+2021-04-16+10-35-42.png?auto=compress,format"
+    },
+    "author": "https://blog.rocketseat.com.br/mapas-com-react-usando-leaflet/",
+    "content": [
+      {
+        "heading": "Neste post vamos desenvolver uma página web para demonstrar, na prática, a integração de Mapas em uma aplicação com React usando Leaflet.",
+        "body": [
+          {
+            "text": "Neste post vamos desenvolver uma página web para demonstrar, na prática, a integração de Mapas em uma aplicação com React usando Leaflet."
+          },
+          {
+            "text": "Alguns pontos que vamos abordar:"
+          },
+          {
+            "text": "Geolocalização;"
+          },
+          {
+            "text": "Consumo de API;"
+          },
+          {
+            "text": "Input com Autocomplete usando React-Select;"
+          },
+          {
+            "text": "Integração com Mapas;"
+          },
+          {
+            "text": "Estilização do Mapa e Marcadores."
+          },
+          {
+            "text": "Leaflet é uma biblioteca JavaScript open-source para trabalhar com Mapas em aplicações web e mobile. Pode ser simplesmente integrada a um site usando apenas HTML, CSS e JavaScript."
+          },
+          {
+            "text": "Podemos também integrar a Leaflet ao React com a biblioteca React Leaflet, que tem suporte ao TypeScript sendo bastante simples de utilizar. Ambas serão utilizadas em nossa aplicação de demonstração."
+          }
+        ]
+      }
+    ]
+  }
+}

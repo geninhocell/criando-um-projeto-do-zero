@@ -1,0 +1,111 @@
+{
+  "id": "YHmTMREAACIASmFK",
+  "uid": "mapas-com-react-usando-leaflet",
+  "type": "post",
+  "href": "https://primeiro-desafio.cdn.prismic.io/api/v2/documents/search?ref=YHmT_REAACIASmLY&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YHmTMREAACIASmFK%22%29+%5D%5D",
+  "tags": [],
+  "first_publication_date": "2021-04-16T13:41:17+0000",
+  "last_publication_date": "2021-04-16T13:41:17+0000",
+  "slugs": [
+    "mapas-com-react-usando-leaflet"
+  ],
+  "linked_documents": [],
+  "lang": "pt-br",
+  "alternate_languages": [],
+  "data": {
+    "title": "Mapas com React usando Leaflet",
+    "subtitle": "Introdução",
+    "author": "https://blog.rocketseat.com.br/mapas-com-react-usando-leaflet/",
+    "image": {
+      "dimensions": {
+        "width": 574,
+        "height": 375
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.prismic.io/primeiro-desafio/c3fe648e-c1cb-4d30-8f8b-43ce7a843061_Captura+de+tela+de+2021-04-16+10-35-42.png?auto=compress,format"
+    },
+    "content": [
+      {
+        "heading": "Neste post vamos desenvolver uma página web para demonstrar, na prática, a integração de Mapas em uma aplicação com React usando Leaflet.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Neste post vamos desenvolver uma página web para demonstrar, na prática, a integração de Mapas em uma aplicação com React usando Leaflet.",
+            "spans": [
+              {
+                "start": 129,
+                "end": 136,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://react-leaflet.js.org/"
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Alguns pontos que vamos abordar:",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Geolocalização;",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Consumo de API;",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Input com Autocomplete usando React-Select;",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Integração com Mapas;",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Estilização do Mapa e Marcadores.",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Leaflet é uma biblioteca JavaScript open-source para trabalhar com Mapas em aplicações web e mobile. Pode ser simplesmente integrada a um site usando apenas HTML, CSS e JavaScript.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 7,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://leafletjs.com/"
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Podemos também integrar a Leaflet ao React com a biblioteca React Leaflet, que tem suporte ao TypeScript sendo bastante simples de utilizar. Ambas serão utilizadas em nossa aplicação de demonstração.",
+            "spans": [
+              {
+                "start": 60,
+                "end": 73,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://react-leaflet.js.org/"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
