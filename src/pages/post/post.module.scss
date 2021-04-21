@@ -55,6 +55,16 @@
         }
       }
     }
+
+    .updatedAt {
+      margin-top: 16px;
+      font-family: Inter;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--info);
+    }
   }
 
   .article {
@@ -67,20 +77,115 @@
 
     text-align: justify;
 
+    a {
+      color: var(--highlight);
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+
     h1 {
       font-size: 36px;
       line-height: 50px;
       color: var(--heading);
     }
 
-    p {
+    div {
       margin-top: 24px;
       font-weight: normal;
       font-size: 18px;
       line-height: 140%;
       color: var(--body);
+
+      ul {
+        padding: 16px 0 16px 16px;
+        li {
+          list-style: none;
+
+        }
+      }
     }
 
+  }
+
+  .divider {
+    margin: 60px auto 48px auto;
+    max-width: 700px;
+    height: 0px;
+    opacity: 0.1;
+    border: 1px solid var(--body);
+  }
+
+  .paginationNavigate {
+    display: flex;
+    // justify-content: space-between;
+    margin: 48px auto 80px auto;
+    max-width: 700px;
+
+    .prev_page {
+      margin-right: auto;
+    }
+
+    .next_page {
+      margin-left: auto;
+    }
+
+
+    span {
+      display: flex;
+      flex-direction: column;
+      max-width: 162px;
+
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.5px;
+      color: var(--heading);
+
+      & + span {
+        text-align: right;
+      }
+
+      a {
+        margin-top: 8px;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--highlight);
+      }
+    }
+  }
+
+  .utteranc {
+    max-width: 700px;
+    margin: 0 auto 80px auto;
+  }
+
+  .preview {
+    max-width: 700px;
+    margin: 0 auto 80px auto;
+    background: var(--heading);
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    a {
+
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: justify;
+      color: var(--background);
+    }
   }
 }
 

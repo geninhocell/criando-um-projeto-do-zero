@@ -44,6 +44,8 @@
 }
 
 .footer {
+  display: flex;
+
   font-size: 14px;
   color: var(--info);
   font-family: Inter;
@@ -53,12 +55,15 @@
   line-height: 17px;
 
 
-  svg {
-    margin-right: 10.5px;
-  }
-
-  span {
-    margin-left: 26px;
+  div {
+    display: flex;
+    align-self: center;
+    svg {
+      margin-right: 4px;
+    }
+    & + div {
+      margin-left: 24px;
+    }
   }
 }
 

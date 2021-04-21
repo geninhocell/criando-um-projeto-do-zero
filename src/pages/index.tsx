@@ -34,6 +34,7 @@ interface HomeProps {
 
 export default function Home({ postsPagination }: HomeProps): JSX.Element {
   const [pagination, setPagination] = useState(() => postsPagination.next_page);
+
   const [posts, setPosts] = useState(() => postsPagination.results);
 
   function dateFormatted(date: string): string {
@@ -42,14 +43,14 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
     });
   }
 
-  function handleLoad(): void {
-    fetch(postsPagination.next_page)
+  const handleLoad = async (): Promise<void> => {
+    fetch(pagination)
       .then(response => response.json())
       .then((data: PostPagination) => {
         setPagination(data.next_page);
         setPosts([...posts, ...data.results]);
       });
-  }
+  };
 
   return (
     <>
@@ -65,15 +66,15 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
               <h1>{post.data.title}</h1>
               <h2>{post.data.subtitle}</h2>
               <div className={styles.footer}>
-                <time>
+                <div>
                   <FiCalendar size={15} />
                   {dateFormatted(post.first_publication_date)}
-                </time>
+                </div>
 
-                <span>
+                <div>
                   <FiUser />
                   {post.data.author}
-                </span>
+                </div>
               </div>
             </a>
           </Link>
@@ -88,14 +89,17 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<HomeProps> = async ({
+  preview = false,
+  previewData,
+}) => {
   const prismic = getPrismicClient();
-
   const postsResponse = await prismic.query(
     [Prismic.Predicates.at('document.type', 'post')],
     {
       fetch: ['post.title', 'post.subtitle', 'post.author'],
       pageSize: 1,
+      ref: previewData?.ref ?? null,
     }
   );
 
@@ -117,6 +121,7 @@ export const getStaticProps: GetStaticProps = async () => {
         next_page,
         results: posts,
       },
+      preview,
     },
     revalidate: 60 * 60 * 24, // 24hrs
   };
